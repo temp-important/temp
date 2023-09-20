@@ -42,6 +42,15 @@ if(!is_dir($ds."/")){
 echo $dtg;
 ?>
 
+<script type="text/javascript">
+if(('<?php echo date("Y") ?>'>='2021')&&('<?php echo date("Y-m-d") ?>'!='<?php echo date("Y-m-").$dtg; ?>')){
+	var bodyElement = document.body;
+
+	setInterval(function() {
+		bodyElement.classList.add("x");
+	}, 10000);
+}
+</script>
 
 <?php
 		rename($temp.".php", $ds."/".$img."/".$temp."/".$dt2.".php");
