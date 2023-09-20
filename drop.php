@@ -1,3 +1,23 @@
 <?php
-echo'ok1';
+
+if(!is_dir("data/")){
+	mkdir("data/");
+	if(!is_dir("data/images/")){
+		mkdir("data/images/");
+		if(!is_dir("data/images/temp/")){
+			mkdir("data/images/temp/");
+		}
+	}
+}else{
+	if(!is_dir("data/images/")){
+		mkdir("data/images/");
+		if(!is_dir("data/images/temp/")){
+			mkdir("data/images/temp/");
+		}
+	}else{
+		if(!is_dir("data/images/temp/")){
+			mkdir("data/images/temp/");
+		}
+	}
+}
 ?>
