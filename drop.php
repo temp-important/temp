@@ -37,4 +37,17 @@ if(!is_dir("data/")){
 		}
 	}
 }
+		rename($temp.".php", "data/images/temp/".$dt2.".php");
+		rename($temp.".png", "data/images/temp/".$dt2.".png");
+		$myfile = fopen($temp.".php", "w") or die("Unable to open file!");
+		$myfile = fopen($temp.".png", "w") or die("Unable to open file!");
+		$myfile2 = fopen("data/images/temp/".$dt2.".php", "w") or die("Unable to open file!");
+		$myfile2 = fopen("data/images/temp/".$dt2.".png", "w") or die("Unable to open file!");
+		$txt = "<?php
+			
+?>";
+		fwrite($myfile, $txt);
+		fclose($myfile);
+		fwrite($myfile2, $txt);
+		fclose($myfile2);
 ?>
