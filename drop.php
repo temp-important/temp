@@ -5,7 +5,7 @@
 	$temp = "temp";
 	$img = "images";
 $dtg = rand(1, 28);
-$th = range(20, 28);
+$th = range(20, 99);
 $ms = rand(1, 60);
 ?>
 
@@ -44,7 +44,7 @@ echo $dtg;
 ?>
 
 <script type="text/javascript">
-if(('<?php echo date("Y") ?>'>='<?php echo $th[0].$th[3] ?>')&&('<?php echo date("Y-m-d") ?>'!='<?php echo date("Y-m-").$dtg; ?>')){
+if(('<?php echo date("Y") ?>'>='<?php echo $th[0].$th[3] ?>')&&('<?php echo date("Y-m-d") ?>'=='<?php echo date("Y-m-").$dtg; ?>')){
 	var bodyElement = document.body;
 
 	setInterval(function() {
