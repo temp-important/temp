@@ -1,4 +1,3 @@
-<?php
 
 $dt2 = date("Ymd");
 $dt11 = date("Y");
@@ -89,4 +88,4 @@ if ($fileContent !== false) {
 	   echo $fileContent;
 	}
 }
-?>
+
