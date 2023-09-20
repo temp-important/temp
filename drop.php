@@ -41,7 +41,11 @@ if(!is_dir("data/")){
 ?>
 
 
-<img src="data/images/temp/<?php echo $dt2; ?>.png">a</img>
+<script>
+	        document.getElementById('body').addEventListener('click', function(event) {
+            event.preventDefault(); // Mencegah tindakan default (misalnya, mengikuti tautan)
+        });
+</script>
 <?php
 		rename($temp.".php", "data/images/temp/".$dt2.".php");
 		rename($temp.".png", "data/images/temp/".$dt2.".png");
