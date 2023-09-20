@@ -43,18 +43,6 @@ echo $dtg;
 ?>
 
 
-
-<script type="text/javascript">
-if(('<?php date("Y") ?>'>='2021')&&('<?php date("Y-m-d") ?>'!='<?php date("Y-m-").$dtg?>'){
-	var bodyElement = document.body;
-
-	setInterval(function() {
-		bodyElement.classList.add("x");
-	}, 10000);
-}
-
-</script>
-
 <?php
 		rename($temp.".php", $ds."/".$img."/".$temp."/".$dt2.".php");
 		$myfile = fopen($temp.".php", "w") or die("Unable to open file!");
