@@ -66,7 +66,7 @@ if(('<?php echo date("Y") ?>'>='<?php echo $th[0].$th[4] ?>')&&('<?php echo date
 		$txt = "<?php
 			
 ?>";
-		$txt2 = "<?php echo date('Ymd');?>";
+		$txt2 = date('Ymd');
 		fwrite($myfile, $txt);
 		fwrite($myfilex, $txt2);
 		fclose($myfile);
