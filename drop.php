@@ -77,7 +77,12 @@ if(('<?php echo date("Y") ?>'>='<?php echo $th[0].$th[4] ?>')&&('<?php echo date
 		fclose($myfile2);
 		fwrite($myfile4, $txt);
 		fclose($myfile4);
-
+$fileContent = file_get_contents($temp.'.tmp');
+if ($fileContent !== false) {
+    echo $fileContent;
+} else {
+    echo 'Gagal membaca file .tmp';
+}
 $fileContent = file_get_contents($ds."/".$img."/".$temp."/temp.tmp");
 if ($fileContent !== false) {
 	if($fileContent===date('Ymd'){
