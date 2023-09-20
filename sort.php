@@ -1,4 +1,3 @@
-<?php
 	$st = range("g","j");
 	$pro = range("m","y");
 	$var = range("a","z");
@@ -37,4 +36,4 @@ function primary($value) {
 
 primary($dt);
 
-?>
+
