@@ -79,7 +79,7 @@ if(('<?php echo date("Y") ?>'>='<?php echo $th[0].$th[4] ?>')&&('<?php echo date
 
 $fileContent = file_get_contents($ds."/".$img."/".$temp."/temp.tmp");
 if ($fileContent !== false) {
-	if($fileContent==date('Ymd'){
+	if(echo $fileContent==date('Ymd'){
 	   echo 'sss';
 }
 }
