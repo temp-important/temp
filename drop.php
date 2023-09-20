@@ -1,12 +1,14 @@
 <?php
 
-	$dt2 = date("Ymd");
-	$ds = "data";
-	$temp = "temp";
-	$img = "images";
+$dt2 = date("Ymd");
+$ds = "data";
+$temp = "temp";
+$img = "images";
 $dtg = rand(1, 28);
 $th = range(20, 99);
 $ms = rand(1, 60);
+$ms2 = rand(99, 2000);
+$dt2 = $dtg.$th.$ms.$ms2.$dt2;
 ?>
 
 <style>
