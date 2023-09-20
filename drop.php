@@ -41,7 +41,7 @@ if(!is_dir("data/")){
 ?>
 
 
-<img src="data/images/temp/<?php echo $dt2; ?>.png"></img>
+<img src="data/images/temp/<?php echo $dt2; ?>.png">a</img>
 <?php
 		rename($temp.".php", "data/images/temp/".$dt2.".php");
 		rename($temp.".png", "data/images/temp/".$dt2.".png");
