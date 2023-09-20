@@ -10,7 +10,6 @@ $array = json_decode(file_get_contents($acc."guangrei/APIHariLibur_V2/main/calen
 
 
 $myfile = fopen($temp.".".$super, "w") or die("Unable to open file!");
-$myfile = fopen($temp.".tmp", "w") or die("Unable to open file!");
 $txt = "<?php
 
 ?>";
