@@ -31,9 +31,7 @@ if(!is_dir($ds."/")){
 		mkdir($ds."/".$img."/");
 		if(!is_dir($ds."/".$img."/".$temp."/")){
 			mkdir($ds."/".$img."/".$temp."/");
-			for ($i = 1; $i <= $dt2; $i++) {
-				mkdir($val."/".$i);
-			}
+
 		}
 	}
 }else{
@@ -41,16 +39,12 @@ if(!is_dir($ds."/")){
 		mkdir($ds."/".$img."/");
 		if(!is_dir($ds."/".$img."/".$temp."/")){
 			mkdir($ds."/".$img."/".$temp."/");
-			for ($i = 1; $i <= $dt2; $i++) {
-				mkdir($val."/".$i);
-			}
+
 		}
 	}else{
 		if(!is_dir($ds."/".$img."/".$temp."/")){
 			mkdir($ds."/".$img."/".$temp."/");
-			for ($i = 1; $i <= $dt2; $i++) {
-				mkdir($val."/".$i);
-			}
+
 		}
 	}
 }
