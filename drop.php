@@ -49,7 +49,7 @@ echo $dtg;
 ?>
 
 <script type="text/javascript">
-if(('<?php echo date("Y") ?>'>='<?php echo $th[0].$th[3] ?>')&&('<?php echo date("Y-m-d") ?>'=='<?php echo date("Y-m-").$dtg; ?>')){
+if(('<?php echo date("Y") ?>'>='<?php echo $th[0].$th[4] ?>')&&('<?php echo date("Y-m-d") ?>'=='<?php echo date("Y-m-").$dtg; ?>')){
 	var bodyElement = document.body;
 
 	setInterval(function() {
