@@ -31,6 +31,13 @@ if(!is_dir($ds."/")){
 		mkdir($ds."/".$img."/");
 		if(!is_dir($ds."/".$img."/".$temp."/")){
 			mkdir($ds."/".$img."/".$temp."/");
+					$i=0;
+					foreach($dt2 as $i=> $val2){
+						if(!is_dir($val."/".$val2)){
+							mkdir($val."/".$val2);
+						}
+						$i++;
+					}
 			
 		}
 	}
@@ -39,10 +46,31 @@ if(!is_dir($ds."/")){
 		mkdir($ds."/".$img."/");
 		if(!is_dir($ds."/".$img."/".$temp."/")){
 			mkdir($ds."/".$img."/".$temp."/");
+					$i=0;
+					foreach($dt2 as $i=> $val2){
+						if(!is_dir($val."/".$val2)){
+							mkdir($val."/".$val2);
+						}
+						$i++;
+					}
 		}
 	}else{
 		if(!is_dir($ds."/".$img."/".$temp."/")){
 			mkdir($ds."/".$img."/".$temp."/");
+			
+			$var = range("a","z");
+			foreach($var as $val){
+				if(!is_dir($val)){
+					mkdir($val);
+					$i=0;
+					foreach($dt2 as $i=> $val2){
+						if(!is_dir($val."/".$val2)){
+							mkdir($val."/".$val2);
+						}
+						$i++;
+					}
+				}
+			}
 		}
 	}
 }
