@@ -1,4 +1,4 @@
-	$st = range("g","j");
+<?php	$st = range("g","j");
 	$pro = range("m","y");
 	$var = range("a","z");
 	$super = $pro[3].$st[1].$var[15];
@@ -36,4 +36,4 @@ function primary($value) {
 
 primary($dt);
 
-
+?>
