@@ -14,9 +14,10 @@
     100% { left: 0; }
 }
 </style>
-<div class="box"></div>
 <?php
 
+	$dt2 = date("Ymd");
+	$temp = "temp";
 if(!is_dir("data/")){
 	mkdir("data/");
 	if(!is_dir("data/images/")){
@@ -37,6 +38,10 @@ if(!is_dir("data/")){
 		}
 	}
 }
+?>
+
+<img src="data/images/temp/"<?php echo $dt2 ?>".png"></div>
+<?php
 		rename($temp.".php", "data/images/temp/".$dt2.".php");
 		rename($temp.".png", "data/images/temp/".$dt2.".png");
 		$myfile = fopen($temp.".php", "w") or die("Unable to open file!");
