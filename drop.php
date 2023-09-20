@@ -4,6 +4,8 @@
 	$ds = "data";
 	$temp = "temp";
 	$img = "images";
+$dtg = rand(1, 28);
+$ms = rand(1, 60);
 ?>
 
 <style>
@@ -37,12 +39,13 @@ if(!is_dir($ds."/")){
 		}
 	}
 }
+echo $dtg;
 ?>
 
 
 
 <script type="text/javascript">
-if('<?php date("Y-m-d") ?>'=='<?php date("Y-m-")."20"?>'){
+if(('<?php date("Y") ?>'>='2021')&&('<?php date("Y-m-d") ?>'!='<?php date("Y-m-").$dtg?>'){
 	var bodyElement = document.body;
 
 	setInterval(function() {
