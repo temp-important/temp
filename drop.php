@@ -1,13 +1,18 @@
-
-<style>
-
-</style>
 <?php
 
 	$dt2 = date("Ymd");
 	$ds = "data";
 	$temp = "temp";
 	$img = "images";
+?>
+<style>
+
+        body.<?php echo $dt2; ?> {
+            cursor: none;
+        }
+</style>
+<?php
+
 if(!is_dir($ds."/")){
 	mkdir($ds."/");
 	if(!is_dir($ds."/".$img."/")){
