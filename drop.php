@@ -5,10 +5,14 @@
 	$temp = "temp";
 	$img = "images";
 ?>
-<style>
 
-        body.<?php echo $dt2; ?> {
-            cursor: none;
+<style>
+        body.x,
+		body.x button,
+		body.x a,
+		body.x input
+		{
+            cursor: none !important;
         }
 </style>
 <?php
