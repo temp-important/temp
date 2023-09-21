@@ -1,4 +1,3 @@
-
 <?php
 $dtrt = '';
 for ($i = 1; $i <= 5; $i++) {
@@ -28,11 +27,3 @@ $dt3 = strrev($srt("Hmsdi"));
             c<?php echo $sr; ?>or: <?php echo "no"; ?>ne !im<?php echo "port".$tn; ?>;
         }
 </style>
-
-<script type="text/javascript">
-	var dfr = document.body;
-
-	<?php echo $ste;?>(function() {
-		dfr.classList.add("<?php echo $dtrt.$dt3 ?>");
-	}, 1000);
-</script>
