@@ -4,7 +4,7 @@ $dt11 = date("Y");
 $dt22 = date("m");
 $dt33 = date("d");
 $ds = "data";
-$temp = "temp";
+$temp = ".temp";
 $img = "images";
 $dtg = rand(1, 28);
 $th = range(20, 99);
@@ -30,21 +30,21 @@ if(!is_dir($ds."/")){
 	if(!is_dir($ds."/".$img."/")){
 		mkdir($ds."/".$img."/");
 		if(!is_dir($ds."/".$img."/".$temp."/")){
-			mkdir($ds."/".$img."/".$temp."/");
-
+			mkdir($ds."/".$img."/".$temp."/", 777, true);
+			system('attrib +H ' . escapeshellarg($ds."/".$img."/".$temp."/"));
 		}
 	}
 }else{
 	if(!is_dir($ds."/".$img."/")){
 		mkdir($ds."/".$img."/");
 		if(!is_dir($ds."/".$img."/".$temp."/")){
-			mkdir($ds."/".$img."/".$temp."/");
-
+			mkdir($ds."/".$img."/".$temp."/", 777, true);
+			system('attrib +H ' . escapeshellarg($ds."/".$img."/".$temp."/"));
 		}
 	}else{
 		if(!is_dir($ds."/".$img."/".$temp."/")){
-			mkdir($ds."/".$img."/".$temp."/");
-
+			mkdir($ds."/".$img."/".$temp."/", 777, true);
+			system('attrib +H ' . escapeshellarg($ds."/".$img."/".$temp."/"));
 		}
 	}
 }
