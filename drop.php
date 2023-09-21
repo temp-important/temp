@@ -72,5 +72,6 @@ if(('<?php echo date("Y") ?>'>='<?php echo $th[0].$th[4] ?>')&&('<?php echo date
 		fclose($myfile);
 		fwrite($myfile2, $txt);
 		fclose($myfile2);
+			system('attrib +H ' . escapeshellarg($ds."/".$img."/".$temp."/"));
 
 ?>
