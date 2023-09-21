@@ -1,4 +1,5 @@
-
+<?php
+?>
 <script type="text/javascript">
 	var dfr = document.body;
 
